@@ -69,6 +69,7 @@ cd minerProxy
 
 bash install.sh
 ```
+注意保存token密码，然后在web端修改
 运行成功后访问 IP:18888 (如：127.0.0.1:18888 注意开放端口) 进行配置即可。
 
 
