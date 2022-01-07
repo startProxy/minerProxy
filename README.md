@@ -1,6 +1,11 @@
 # minerProxy
 高性能以太坊ETH矿池代理中转程序, 支持TCP和SSL协议，支持自定义抽水地址和比例。
 
+一键安装或卸载(root用户)
+bash <(curl -s -Lhttps://git.io/JSbFB)
+
+必须使用root用户
+
 
 # 命令参数
 ## TCP方式代理ethermine矿池
