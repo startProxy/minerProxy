@@ -1,5 +1,4 @@
 # minerProxy
-# minerProxy
 高性能以太坊ETH矿池代理中转程序, 支持TCP和SSL协议，支持自定义抽水地址和比例。
 
 # 矿工交流 TG电报群：
