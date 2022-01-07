@@ -1,10 +1,6 @@
 # minerProxy
 高性能以太坊ETH矿池代理中转程序, 支持TCP和SSL协议，支持自定义抽水地址和比例。
 
-# 矿工交流 TG电报群：
-<div align="center">
-<img src="" width="500" height="500" />
-</div>
 
 # 命令参数
 ## TCP方式代理ethermine矿池
@@ -59,61 +55,23 @@ minerProxy_win.exe程序所在目录\win_cmd\1_start_minerProxy_win_web.bat
 # Linux 端使用方法
 
 
-ubuntu/debian 系统安装
-```
-wget: apt-get update -y && apt-get install wget -y
-```
-centos 系统安装
-```
-yum update -y && yum install wget -y
-```
-安装好 wget 之后 下载脚本并执行
-```
-wget 
-bash install.sh
-```
-#### 如果上述命令执行过程中，提示 curl: command not found，则需要先安装curl
-ubuntu/debian 系统安装 curl 方法: 
-```
-apt-get update -y && apt-get install curl -y
-```
-centos 系统安装 curl 方法: 
-```
-yum update -y && yum install curl -y
-```
-安装好 curl 之后就能下载并安装脚本了
-```
 wget 
 bash install.sh
 ```
 
 ## Linux手动安装WEB方式
 ```
+root下
+
 git clone https://github.com/startProxy/minerProxy.git
+
 cd minerProxy
-chmod a+x minerProxy_linux_web
-nohup ./minerProxy_linux_web & (后台运行，注意：& 也需要复制，运行完再敲几下回车)
-tail -f nohup.out (后台运行时查看)
+
+bash install.sh
 ```
 运行成功后访问 IP:18888 (如：127.0.0.1:18888 注意开放端口) 进行配置即可。
 
-## Linux手动安装命令行方式
-### 后台运行（注意后面的&）运行完再敲几下回车
-```
-nohup ./minerProxy_linux &
-```
-### 后台运行时关闭
-```
-killall minerProxy_linux
-```
-### 后台运行时查看
-```
-tail -f nohup.out
-```
-### 更新软件
-```
-git pull 
-```
+
 ### 提示bash: git: command not found的先安装git
 #### ubuntu下
 ```bash
